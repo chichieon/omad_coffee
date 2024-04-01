@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+/* 프리텐다드 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Playfair Display체 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-size: 18px;
+    font-family: 'Pretendard';
+    ;
+    min-width: 1320px;
+    line-height: 1.5;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_in ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-weight: 500;
+}
+
+.header_in>a>img {
+    position: absolute;
+    top: 5px;
+}
+
+.nav {
+    margin-left: -200px;
+}
+
+.nav>ul>li>a {
+    display: block;
+    padding: 2em;
+}
+
+.nav>ul>li:hover>a {
+    background-color: #fff;
+}
+
+.nav>ul>li {
+    position: relative;
+}
+
+.nav .sub {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 1em 0;
+}
+
+.sub li a:hover {
+    background-color: #fff;
+}
+
+.header_right>li {
+    margin-left: 1.5em;
+}
+
+.header_right li img {
+    width: 20px;
+}
+
+.header_right>li>a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+
+
+
+/* banner */
+.banner {
+    width: 1920px;
+    height: 937px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 300px;
+}
+
+.banner h2 {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.banner h1 {
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    font-size: 100px;
+}
+.banner img{
+    margin-top: -750px;
+}
+
+.ex{
+    width: 100%;
+    height: 1000px;
+    background-color: antiquewhite;
+    margin-top: 100px;
+}
+/* banner */

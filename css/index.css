@@ -1,0 +1,975 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+/* 프리텐다드 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Playfair Display체 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-size: 18px;
+    font-family: 'Pretendard';;
+    min-width: 1320px;
+    line-height: 1.5;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_in ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-weight: 500;
+}
+
+.header_in>a>img {
+    position: absolute;
+    top: 5px;
+}
+
+.nav {
+    margin-left: -200px;
+}
+
+.nav>ul>li>a {
+    display: block;
+    padding: 2em;
+}
+
+.nav>ul>li:hover>a {
+    background-color: #fff;
+}
+
+.nav>ul>li {
+    position: relative;
+}
+
+.nav .sub {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 1em 0;
+}
+
+.sub li a:hover {
+    background-color: #fff;
+}
+
+.header_right>li {
+    margin-left: 1.5em;
+}
+.header_right li img{
+    width: 20px;
+}
+.header_right>li>a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+
+
+/* banner */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* 슬라이드 꾸미기 */
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.slide .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.slide .swiper-button-prev,
+.slide .swiper-button-next {
+    color: #d4b879;
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.slide .swiper-button-prev:hover,
+.slide .swiper-button-next:hover {
+    color: rgb(61, 39, 11);
+}
+
+/* banner */
+
+
+/* section / best_item */
+
+section {
+    width: 100%;
+    background-color: #FFFDF3;
+    text-align: center;
+    padding: 150px 0;
+    box-sizing: border-box;
+}
+
+section h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 90px;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide a img {
+    margin-bottom: 20px;
+}
+
+.swiper-slide p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.swiper-slide p:nth-of-type(2) {
+    font-size: 20px;
+}
+
+
+
+/* 갤러리 꾸미기 */
+.gallery {
+    width: 1320px;
+    margin: 50px auto;
+    padding: 0 50px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery_inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .swiper-slide a {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+    color: #a08a7c;
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.gallery .swiper-button-prev:hover,
+.gallery .swiper-button-next:hover {
+    color: rgb(61, 39, 11);
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery .swiper-pagination-bullet {
+    background: #506A54;
+    width: 5px;
+    height: 5px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery .swiper-horizontal>.swiper-pagination-bullets,
+.gallery .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 5px;
+}
+
+/* section / best_item */
+
+
+/* background / wrap*/
+.bg_box {
+    width: 100%;
+    height: 700px;
+    background: url(../images/index/4.main_section/coffee_bg.png) no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.wrap {
+    margin-top: -530px;
+    height: 5000px;
+    background: url(../images/index/bg.png) no-repeat center 500px;
+    background-color: #fffdf3;
+}
+
+/* background / wrap*/
+
+
+/* main_section */
+.main_section {
+    width: 1050px;
+    height: 1364px;
+    margin: 0 auto 200px;
+}
+
+.main_section>div {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article_1 {
+    margin-bottom: 80px;
+}
+
+.article_1 h1 {
+    width: 100%;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.article_1 .text {
+    margin-left: 50px;
+}
+
+.text h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: #a08a7c 1px 1px 5px;
+}
+
+.text p {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.text a {
+    display: inline-block;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 10px 0 10px 20px;
+    border-radius: 500px;
+    position: relative;
+    width: 120px;
+}
+
+.text .hover {
+    position: absolute;
+    top: 35%;
+    left: 79%;
+    opacity: 0;
+}
+
+.text a:hover {
+    color: #fff;
+    background-color: #E6B958;
+}
+
+.text a:hover .hover {
+    opacity: 1;
+}
+
+.text a:hover img:nth-of-type(1) {
+    display: none;
+}
+
+.article_2 {
+    width: 100%;
+    justify-content: end;
+}
+
+.text_2 {
+    text-align: end;
+    margin: 80px 50px 0 0;
+}
+
+.text_2 h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.text_2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+
+.text_2 p {
+    font-size: 20px;
+}
+
+.text_2 a {
+    margin-top: 50px;
+    display: inline-block;
+    font-weight: 500;
+    background-color: #dddddd;
+    padding: 10px 20px 10px 0px;
+    border-radius: 500px;
+    position: relative;
+    width: 120px;
+}
+
+
+.text_2 .hover_2 {
+    position: absolute;
+    top: 35%;
+    left: 78%;
+    opacity: 0;
+}
+
+.text_2 a:hover {
+    color: #fff;
+    background-color: #E6B958;
+}
+
+.text_2 a:hover {
+    text-align: center;
+}
+
+.text_2 a:hover .hover_2 {
+    opacity: 1;
+}
+
+.text_2 a:hover img:nth-of-type(1) {
+    display: none;
+}
+
+.article_2>img:nth-last-of-type(1) {
+    position: absolute;
+    top: 60%;
+    left: -10%;
+}
+
+/* main_section */
+
+
+/* section_2 */
+.section_2 {
+    width: 1320px;
+    height: 657px;
+    margin: 0 auto 200px;
+}
+
+.section_2 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section_2 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 슬라이드-세로 꾸미기 */
+.slide2 {
+    width: 100%;
+    height: 533px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.swiper-slide img {
+    display: block;
+}
+
+.slide2 .swiper-slide {
+    text-align: center;
+    font-size: 20px;
+    background: #819F86;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: left;
+}
+
+.slide2 .swiper-slide a {
+    width: 100%;
+    display: block;
+}
+
+.slide2 .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide2 .swiper-pagination-bullet {
+    background: #506A54;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide2 .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide2 .swiper-horizontal>.swiper-pagination-bullets,
+.slide2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px;
+}
+
+
+.brewing_box {
+    width: 100%;
+    height: 533px;
+    margin-top: 50px;
+    background-color: #819F86;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.brewing_1 {
+    width: calc(1320px - 480px);
+    margin: auto 105px;
+}
+
+.brewing_1 h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.swiper-slide .brewing_1 p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.brewing_1 ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    margin-top: 30px;
+}
+
+.brewing_1 ul li {
+    background-color: #fff;
+}
+
+.brewing_1 ul li:nth-of-type(1) {
+    border-radius: 500px 0 0 500px;
+    border-right: 1px solid #ccc;
+}
+
+.brewing_1 ul li:nth-of-type(2) {
+    border-radius: 0 500px 500px 0;
+}
+
+.brewing_1 ul li a {
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.brewing_1 ul li:nth-of-type(1) a:hover {
+    background-color: #506A54;
+    color: #fff;
+    border-radius: 500px 0 0 500px;
+}
+
+.brewing_1 ul li:nth-of-type(2) a:hover {
+    background-color: #506A54;
+    color: #fff;
+    border-radius: 0 500px 500px 0;
+    padding: 10px 0 10px 25px;
+}
+
+.brewing_1 p:nth-last-child(1) {
+    /* transform: translate(65px, 50px);
+    animation: scroll_down 1.5s infinite ease-in-out alternate; */
+    opacity: 0.8;
+    margin: 30px 0 0 70px;
+}
+
+.brewing_1 img {
+    display: inline-block;
+    opacity: 0.8;
+    margin-top: 50px;
+    animation: scroll_down 1.5s infinite ease-in-out alternate;
+}
+
+
+@keyframes scroll_down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* section_2 */
+
+
+/* section_3 */
+.section_3 {
+    width: 1320px;
+    height: 556px;
+    margin: 0 auto 200px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section_3 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.section_3 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.subscript_1,
+.subscript_2 {
+    width: 630px;
+    height: 450px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.subscript_1 {
+    background: url(../images/index/6.subscription/delivery_noshadow.png) no-repeat right;
+}
+
+.subscript_1 h3 {
+    padding: 40px 10px 0 50px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.subscript_1 img {
+    display: block;
+    padding-top: 70px;
+}
+
+.subscript_2 {
+    background: url(../images/index/6.subscription/news_letter_long.png) no-repeat right;
+}
+
+.subscript_2 h3 {
+    padding: 40px 10px 0 50px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.subscript_2 img {
+    display: block;
+    padding-top: 70px;
+}
+
+.subscript_hover {
+    width: 100%;
+    padding-left: 50px;
+    font-size: 30px;
+    transform: translateY(300px);
+    transition: all 1s;
+}
+
+.subscript_hover a {
+    display: inline-block;
+    font-size: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 500px;
+}
+
+.subscript_hover a:hover {
+    background-color: #E6B958;
+    color: #fff;
+}
+
+.subscript_1:hover>.subscript_hover,
+.subscript_2:hover>.subscript_hover{
+    transform: translateY(0);
+}
+
+
+
+/* section_3 */
+
+/* section_4 */
+
+.section_4{
+    height: 633px;
+    margin: 0 auto 200px;
+    text-align: center;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section_4 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.section_4 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.section_4 img {
+    display: block;
+}
+
+.section_4 .card {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.section_4 .card>p{
+    font-weight: 400;
+}
+.card p {
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transition: all 1.3s;
+}
+
+.card span {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.black_box {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 410px;
+    height: 209px;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.section_4 .black_box img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 72px;
+}
+
+.card:hover>.black_box {
+    height: 500px;
+}
+
+.card:hover>p:nth-of-type(1) {
+    transform: translateY(-300px);
+}
+
+.card:hover>.black_box>img {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.section_4 .card_hover {
+    font-size: 20px;
+    line-height: 1.1;
+    transform: translateY(350px);
+    transition: all 1.5s;
+}
+
+.card:hover>.card_hover {
+    transform: translateY(0);
+}
+
+/* 갤러리 꾸미기 */
+.section_4 .gallery2 {
+    width: calc(410px * 3 + 90px);
+    margin: 50px auto;
+    padding: 0 50px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section_4 .gallery_inner {
+    overflow: hidden;
+}
+
+.section_4 .gallery2 .swiper-slide {
+    width: 410px;
+    height: 500px;
+}
+
+.section_4 .gallery2 .swiper-slide img {
+    display: block;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.section_4 .gallery2 .swiper-button-prev,
+.section_4 .gallery2 .swiper-button-next {
+    color: #a08a7c;
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.section_4 .gallery2 .swiper-button-prev:hover,
+.section_4 .gallery2 .swiper-button-next:hover {
+    color: #553b2b;
+}
+
+/* section_4 */
+
+
+/* section_5 */
+.section_5 {
+    width: 1059px;
+    height: 733px;
+    margin: auto;
+    text-align: center;
+}
+
+.section_5 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.section_5 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.section_5 ul {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_5 ul li {
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.section_5 ul li img {
+    display: block;
+    filter: grayscale(1);
+    transition: all 1s;
+}
+
+.section_5 ul li:hover img {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+/* section_5 */
+
+
+/* footer */
+.footer_top {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: -24px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.footer_top_in {
+    width: 1059px;
+    margin: 30px auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    position: relative;
+}
+
+
+.footer_top_in>a>img {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -30px;
+}
+
+.footer_top_in ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.footer_top_in ul:nth-of-type(1) li {
+    margin-right: 30px;
+}
+
+.footer_top_in ul:nth-of-type(2) li {
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.footer_top_in ul:nth-of-type(1) li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer_top_in ul:nth-of-type(2) li:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 1059px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.footer_left h5,
+.footer_right h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer>p {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* footer */
