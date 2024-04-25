@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+/* 프리텐다드 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: 'Pretendard';
+    min-width: 1320px;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_in {
+    width: 100%;
+    max-width: 1320px;
+    min-width: 960px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.header_in ul,
+.header_right>li {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-weight: 500;
+}
+.header_in>a>img{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.nav>ul>li>a {
+    display: block;
+    padding: 2em;
+}
+
+.nav>ul>li:hover>a {
+    background-color: #fff;
+}
+
+.nav>ul>li {
+    position: relative;
+}
+
+.nav .sub {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 1em 0;
+}
+
+.sub li a:hover {
+    background-color: #c9b3a2;
+}
+
+.header_right>li {
+    margin-left: 1.5em;
+}
+
+.header_right li img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 3px;
+}
+
+.header_right>li>a:hover {
+    font-weight: bold;
+}
+
+/* header */
+
+
+/* top_icon */
+.top_icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    border: 3px solid#000;
+    border-radius: 300px;
+    padding: 5px;
+    display: none;
+}
+
+.top_icon img {
+    display: block;
+}
+
+/* top_icon */
+
+.ex {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+/* 탭메뉴 꾸미기 */
+.tab {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #FFFDF3;
+    border: 1px solid #c9c9c9;
+}
+
+.tabnav {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 10%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.tabnav li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 40px;
+    z-index: 2;
+}
+
+.tabnav li a:hover {
+    background-color: #ffef9f;
+}
+
+/* tab */
+
+/* wrap */
+.wrap {
+    margin: auto;
+    text-align: center;
+}
+
+.wrap h1 {
+    margin-top: 150px;
+    font-size: 70px;
+}
+
+.wrap h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+/* wrap */
+
+
+/* event */
+#event ul {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#event ul,
+#event ul li a {
+    display: block;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+
+#event ul li {
+    width: 49%;
+    max-width: 630px;
+    height: 300px;
+    border: 1px solid #eee;
+    /* overflow: hidden; */
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#event ul li:nth-of-type(1),
+#event ul li:nth-of-type(2) {
+    margin-bottom: 60px;
+}
+
+#event ul li a {
+    border-radius: 20px;
+}
+
+#event ul li img {
+    width: 55%;
+    max-width: 300px;
+    height: 298px;
+    border-radius: 20px 0 0 20px;
+}
+
+#event ul li .text {
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: start;
+}
+
+.text h6 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #64B7FF;
+}
+
+.text h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text p {
+    color: #707070;
+    font-size: 16px;
+}
+
+#event ul li a:hover {
+    box-shadow: 10px 10px 10px #e2e2e2;
+}
+
+#event ul{
+    position: relative;
+}
+
+.black_box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: 630px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.9);    
+    color: #fff;
+    padding-top: calc((300px - 27px) / 2);
+    box-sizing: border-box;
+}
+
+
+/* event */
+
+
+/* notice */
+
+/* 탭메뉴 꾸미기 */
+.notice_tab {
+    width: 100%;
+    max-width: 1320px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.notice_tabnav {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.notice_tabnav li a {
+    display: block;
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 2;
+}
+
+.notice_tabnav li a:hover {
+    background: #AA9884;
+    color: #fff;
+}
+
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+
+
+/* 탭컨테츠 꾸미기 */
+.tabcontent {
+    height: 300px;
+    position: relative;
+    top: -2px;
+    z-index: 2;
+    border-top: 1px solid #333;
+}
+
+
+/* Q&A 꾸미기 */
+.q_a,
+.q_a li {
+    width: 100%;
+    font-size: 16px;
+}
+
+.q_a li a {
+    display: block;
+    border-bottom: 1px solid #CCC;
+    padding: 10px 50px;
+    text-align: start;
+    background: url(../images/sub4/icon_down.png) no-repeat 95% 50%;
+}
+
+.q_a li:hover a {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.q_a li.on a {
+    font-weight: bold;
+    background-color: #eee;
+    background: #eee url(../images/sub4/icon_up.png) no-repeat 95% 50%;
+}
+
+.q_a li div {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 100px;
+    display: none;
+}
+#tab03 li a span{
+    background-color: #ccc;
+    color: #fff;
+    padding: 0 5px;
+    margin: 0 10px 0 50px;
+}
+
+
+/* notice */
+
+
+/* footer */
+.footer_top {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: -24px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.footer_top_in {
+    width: 100%;
+    max-width: 1059px;
+    margin: 30px auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    position: relative;
+}
+
+
+.footer_top_in>a>img {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -30px;
+}
+
+.footer_top_in ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.footer_top_in ul:nth-of-type(1) li {
+    margin-right: 30px;
+}
+
+.footer_top_in ul:nth-of-type(2) li {
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.footer_top_in ul:nth-of-type(1) li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer_top_in ul:nth-of-type(2) li:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    max-width: 1059px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.footer_left h5,
+.footer_right h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer>p {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* footer */

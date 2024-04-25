@@ -1,0 +1,578 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+/* 프리텐다드 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: 'Pretendard';
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_in {
+    width: 100%;
+    max-width: 1320px;
+    min-width: 960px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.header_in ul,
+.header_right>li {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-weight: 500;
+}
+.header_in>a>img{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.nav>ul>li>a {
+    display: block;
+    padding: 2em;
+}
+
+.nav>ul>li:hover>a {
+    background-color: #fff;
+}
+
+.nav>ul>li {
+    position: relative;
+}
+
+.nav .sub {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 1em 0;
+}
+
+.sub li a:hover {
+    background-color: #c9b3a2;
+}
+
+.header_right>li {
+    margin-left: 1.5em;
+}
+
+.header_right li img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 3px;
+}
+
+.header_right>li>a:hover {
+    font-weight: bold;
+}
+
+/* header */
+
+
+/* top_icon */
+.top_icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    border: 3px solid#000;
+    border-radius: 300px;
+    padding: 5px;
+    display: none;
+}
+
+.top_icon img {
+    display: block;
+}
+
+/* top_icon */
+
+/* banner */
+.banner {
+    width: 100%;
+    display: block;
+}
+
+/* banner */
+
+
+/* tab */
+.tab {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #FFFDF3;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.tabnav {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 10%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.tabnav li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 40px;
+    z-index: 2;
+}
+
+.tabnav li a:hover {
+    background-color: #ffef9f;
+}
+
+/* tab */
+
+
+/* delivery */
+#delivery {
+    margin: 100px auto;
+    text-align: center;
+}
+
+#delivery h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#delivery h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+/* delivery */
+
+
+/* benefit */
+.benefit {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto 150px;
+}
+
+.benefit li {
+    width: 298px;
+    height: 380px;
+    border: 1px solid #ccc;
+    border-radius: 300px 300px 0 0;
+    padding-top: 90px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit li img {
+    margin-bottom: 30px;
+}
+
+.benefit li h5 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.benefit li img:nth-last-of-type(1) {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.benefit li:hover img:nth-last-of-type(1) {
+    top: -155px;
+}
+
+/* benefit */
+
+
+/* section / 3단계로 간편하게 주문하세요*/
+section {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto 150px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article {
+    width: 400px;
+    height: 442px;
+    background-color: #B2CCB3;
+    box-sizing: border-box;
+    position: relative;
+}
+
+article img {
+    padding-top: 48px;
+}
+
+article .text {
+    background-color: #AA9884;
+    height: 159px;
+    position: absolute;
+    bottom: 0;
+    text-align: start;
+    color: #fff;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.text h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* section / 3단계로 간편하게 주문하세요*/
+
+
+/* coffee */
+.coffee {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee li {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: start;
+    position: relative;
+    width: 49%;
+    max-width: 620px;
+}
+
+.coffee li>img {
+    margin-top: -94px;
+}
+
+.coffee_text {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.price {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.coffee_text h4 {
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.coffee_text>p {
+    font-size: 20px;
+}
+
+.coffee_text p {
+    display: inline;
+    margin: 5px 0;
+}
+
+.coffee_text img {
+    width: 100%;
+}
+
+.coffee_text a {
+    display: inline-block;
+    width: 250px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px calc((560px - 250px) / 2) 0;
+    font-size: 18px;
+}
+
+.coffee_text a:hover {
+    background-color: #AA9884;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* coffee */
+
+
+/* label */
+.label {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    width: 7700px;
+}
+
+.label h1 {
+    font-size: 150px;
+    font-weight: 900;
+    color: #FFE3A8;
+}
+
+.label h1 span {
+    color: #fff;
+    -webkit-text-stroke: 3px #FFE3A8;
+}
+
+.label_ani_box {
+    overflow: hidden;
+}
+
+/* label */
+
+
+/* subscript */
+#subscript {
+    width: 100%;
+    max-width: 1320px;
+    margin: 100px auto;
+    text-align: center;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#subscript h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+.subscript_text {
+    width: 50%;
+    text-align: start;
+}
+
+.subscript_text p:nth-of-type(1) {
+    margin-bottom: -10px;
+}
+
+.subscript_text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.subscript_text p {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#subscript>img {
+    width: 50%;
+    height: 50%;
+}
+
+.number span{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+.subscript_text ul{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+.subscript_text ul li a{
+    margin-left: 20px;
+    filter: grayscale(1);
+}
+.subscript_text ul li a:hover{
+    filter: grayscale(0);
+}
+input{
+    padding: 15px 30px;
+    font-family: "pretendard";
+    border-radius: 300px 0 0 300px;
+    border: 1px solid #ccc;
+}
+
+.subscript_text button{
+    padding: 15px 30px;
+    font-family: "pretendard";
+    border-radius: 0 300px 300px 0;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+.subscript_text button:hover{
+    font-weight: bold;
+    color: #fff;background-color: #AA9884;
+}
+/* subscript */
+
+
+/* footer */
+.footer_top {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: -24px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.footer_top_in {
+    width: 100%;
+    max-width: 1059px;
+    margin: 30px auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    position: relative;
+}
+
+
+.footer_top_in>a>img {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -30px;
+}
+
+.footer_top_in ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.footer_top_in ul:nth-of-type(1) li {
+    margin-right: 30px;
+}
+
+.footer_top_in ul:nth-of-type(2) li {
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.footer_top_in ul:nth-of-type(1) li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer_top_in ul:nth-of-type(2) li:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    max-width: 1059px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.footer_left h5,
+.footer_right h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer>p {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* footer */
