@@ -368,7 +368,12 @@ footer {
     line-height: 1.7;
     font-size: 17px;
 }
-
+.footer_left{
+    width: 50%;
+}
+.footer_right{
+    width: 15%;
+}
 .footer_left h5,
 .footer_right h5 {
     font-size: 20px;
