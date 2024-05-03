@@ -664,15 +664,16 @@ section h1 {
 
 .subscript_hover {
     width: 100%;
-    padding-left: 50px;
-    font-size: 30px;
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
     transform: translateY(300px);
     transition: all 1s;
 }
 
 .subscript_hover a {
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #fff;
     margin-top: 20px;
     padding: 10px 30px;
@@ -686,7 +687,7 @@ section h1 {
 
 .subscript_1:hover>.subscript_hover,
 .subscript_2:hover>.subscript_hover {
-    transform: translateY(0);
+    transform: translateY(30px);
 }
 
 /* section_3 / subscription */
